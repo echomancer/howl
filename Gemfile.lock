@@ -1,3 +1,22 @@
+GIT
+  remote: git://github.com/Empact/roo.git
+  revision: 2a8c436d67cf53cb3b5d6842a149ca1e0eb02d2e
+  specs:
+    roo (1.12.1)
+      nokogiri
+      rubyzip
+      spreadsheet (> 0.6.4)
+
+GIT
+  remote: git://github.com/thoughtbot/paperclip.git
+  revision: a12dec104dde656917963ec6328390003595234a
+  specs:
+    paperclip (3.5.1)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.0)
+      mime-types
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -44,6 +63,10 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.1)
+      climate_control (>= 0.0.3, < 1.0)
     coderay (1.0.9)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -184,6 +207,8 @@ GEM
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
+    ruby-ole (1.2.11.7)
+    rubyzip (0.9.9)
     sass (3.2.10)
     sass-rails (4.0.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -193,6 +218,8 @@ GEM
       actionpack (>= 4.0.0.rc1, < 4.1)
       activemodel (>= 4.0.0.rc1, < 4.1)
     slop (3.4.6)
+    spreadsheet (0.8.8)
+      ruby-ole (>= 1.0)
     sprockets (2.10.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -252,12 +279,14 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   launchy
+  paperclip!
   quiet_assets
   rails (= 4.0.0)
   rb-fchange
   rb-fsevent
   rb-inotify
   rolify
+  roo!
   rspec-rails
   sass-rails (~> 4.0.0)
   simple_form (>= 3.0.0.rc)

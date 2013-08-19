@@ -15,6 +15,9 @@ gem 'figaro'
 gem 'rolify'
 gem 'simple_form', '>= 3.0.0.rc'
 gem 'thin'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+#Better spreadsheet gem
+gem 'roo', :git => "git://github.com/Empact/roo.git"
 group :assets do
   gem 'therubyracer', :platform=>:ruby
 end
